@@ -1,7 +1,7 @@
 const Layout = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-[#431a63]  fixed z-50 text-white font-semibold">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -56,8 +56,14 @@ const Layout = () => {
             </li>
           </ul>
         </div>
+        
         <div className="navbar-end">
-          <a className="btn">LogIn/Register</a>
+        <button className="btn btn-ghost">
+          Inbox
+          <div className="badge badge-secondary">+99</div>
+        </button>
+          <a className="btn btn-ghost">LogIn/Register</a>
+          
         </div>
       </div>
     </div>

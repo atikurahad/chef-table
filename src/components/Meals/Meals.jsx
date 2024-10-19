@@ -13,14 +13,14 @@ const Meals = () => {
   }, []);
   return (
     <>
-    <section className="flex flex-col">
-    <h1 className="text-4xl font-extrabold text-center">Seasonal      </h1>
-    <p>Enjoy Every Moment</p>
-    </section>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 items-center justify-center">
-      {meals.map((meal,index) => (
-        <Meal  meal={meal} key={index}></Meal>
-      ))}
+      <section className="flex flex-col my-6">
+        <h1 className="text-4xl font-extrabold text-center">Seasonal </h1>
+        <p className="text-xl font-bold text-center">Enjoy Every Moment</p>
+      </section>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-items-center bg-white">
+        {meals.map((meal, index) => (
+          <Meal meal={meal} key={index}></Meal>
+        ))}
       </div>
     </>
   );
