@@ -25,21 +25,16 @@ const Layout = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a>HOME</a>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <a>MENU</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>ABOUT</a>
+              </li>
+              <li>
+                <a>CONTACT</a>
               </li>
             </ul>
           </div>
@@ -48,28 +43,21 @@ const Layout = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <a>HOME</a>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <a>MENU</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a href="/about">ABOUT </a>
+            </li>
+            <li>
+              <a>CONTACT</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn">LogIn/Register</a>
         </div>
       </div>
     </div>
