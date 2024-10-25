@@ -1,4 +1,4 @@
-import PropTypes, { string } from 'prop-types'; 
+import PropTypes from 'prop-types'; 
 
 export default function Meal({ meal }) {
   const { title, img, price, description } = meal;
@@ -19,4 +19,7 @@ export default function Meal({ meal }) {
       </div>
     </div>
   );
+}
+PropTypes.propTypes={
+
 }
